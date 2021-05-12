@@ -18,7 +18,7 @@ CREATE TABLE titles (
     title VARCHAR   NOT NULL,
     from_date DATE   NOT NULL,
     to_date DATE   NOT NULL,
-    CONSTRAINT pk_titles PRIMARY KEY (emp_no,title,from_date)
+    CONSTRAINT pk_titles PRIMARY KEY (emp_no,title)
 );
 
 CREATE TABLE dept_emp (
