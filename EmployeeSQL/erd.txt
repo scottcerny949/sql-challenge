@@ -3,6 +3,20 @@ departments
 dept_no VARCHAR PK
 dept_name VARCHAR
 
+salaries
+-
+emp_no INTEGER PK
+salary INTEGER
+from_date DATE
+to_date DATE
+
+titles
+-
+emp_no INTEGER PK FK >- employees.emp_no
+title VARCHAR PK
+from_date DATE PK
+to_date DATE
+
 dept_emp
 -
 emp_no INTEGER PK FK >- employees.emp_no
@@ -25,17 +39,3 @@ first_name VARCHAR
 last_name VARCHAR
 gender VARCHAR
 hire_date DATE
-
-salaries
--
-emp_no INTEGER PK
-salary INTEGER
-from_date DATE
-to_date DATE
-
-titles
--
-emp_no INTEGER PK FK >- employees.emp_no
-title VARCHAR PK
-from_date DATE PK
-to_date DATE
