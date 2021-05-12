@@ -64,3 +64,4 @@ REFERENCES employees (emp_no);
 
 ALTER TABLE employees ADD CONSTRAINT fk_employees_emp_no FOREIGN KEY(emp_no)
 REFERENCES salaries (emp_no);
+
